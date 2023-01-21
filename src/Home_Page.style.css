@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section#hero img {
+    width: 100%;
+}
+
+section#about {
+    padding: 20px;
+}
+
+section#events li {
+    margin-bottom: 10px;
+}
+
+section#contact {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
