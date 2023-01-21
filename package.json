@@ -18,5 +18,9 @@
   "homepage": "https://github.com/EMGEE2605/Klub-Daniel#readme",
   "dependencies": {
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
