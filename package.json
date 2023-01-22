@@ -6,7 +6,8 @@
   "scripts": {
     "name": "Klub-Daniel",
     "build": "babel src -d lib",
-    "test": "jest"
+    "start:debug": "echo \"Success\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
