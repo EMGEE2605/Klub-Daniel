@@ -1,10 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hmtl {
+    scroll-behavior: smooth;
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: poppins;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
-    padding: 20px;
+    padding: 20px 100px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
 }
 
 header h1 {
@@ -12,6 +32,7 @@ header h1 {
 }
 
 header nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -27,8 +48,91 @@ header nav li:hover {
     background-color: orange;
 }
 
+@media(max-width:1000px) {
+    header {
+        padding: 20px 50px;
+    }
+
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header nav ul li {
+        margin: 0 7px;
+    }
+}
+
 section#hero img {
     width: 100%;
+}
+
+/* Banner area*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+    color: #f2f2f2;
+}
+
+@media(max-width:1000px) {
+    section {
+        padding: 100px 50px;
+    }
+
+}
+
+@media(max-width:700px) {
+    section {
+        padding: 125 px 30px;
+    }
+
+    section p {
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 20px;
+        line-height: 2;
+    }
+
+}
+
+.banner-photo {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.banner-photo .banner-img {
+    background-image: url(images/Tour_2nd_batch16.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-position: center center;
+}
+
+.banner-photo .banner-img::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    opacity: .7;
 }
 
 section#about {
