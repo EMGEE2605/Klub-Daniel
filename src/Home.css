@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    background: url(images/Tour\ _88.jpg);
+    height: 75vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.nav-area li a:hover {
+    background: black;
+    color: orange;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 20%;
+    padding: 15px 0;
+}
+
+.welcome-text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    outline: 100px;
+    outline-style: inherit;
+    outline-color: black;
+    font-family: alfa slab one;
+}
+
+.welcome-text p {
+    text-align: center;
+    color: white;
+    text-transform: Titlecase;
+    font-size: 20px;
+    font-family: poppins;
+}
+
+.welcome-text a {
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    font-weight: 900;
+}
+
+.welcome-text a:hover {
+    background: orange;
+    color: white;
+}
+
+section#events h2 {
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    outline: 100px;
+    outline-style: inherit;
+}
+
+.wrapper1 {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+
+.box-area {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    transition: all 0.6s ease-in-out;
+}
+
+.box-area2 {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    transition: all 0.6s ease-in-out;
+}
+
+.box-area3 {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    transition: all 0.6s ease-in-out;
+}
+
+.box-area h6 {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 50px;
+    font-family: bebas neue;
+}
+
+.box-area2 h6 {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 50px;
+    font-family: bebas neue;
+}
+
+.box-area3 h6 {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 50px;
+    font-family: bebas neue;
+}
+
+.box-area3 h5 {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 30px;
+    font-family: bebas neue;
+}
+
+.box-area:hover {
+    background-color: orange;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box-area2:hover {
+    background-color: orange;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box-area3:hover {
+    background-color: orange;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box-area:hover i {
+    color: #fff;
+}
+
+.box-area:hover h6 {
+    color: #fff;
+}
+
+.box-area2:hover h6 {
+    color: #fff;
+}
+
+.box-area3:hover h6 {
+    color: #fff;
+}
+
+.box-area3:hover h5 {
+    color: #fff;
+}
+
+.box-area:hover p {
+    color: #fff;
+}
+
+.box-area2:hover p {
+    color: #fff;
+}
+
+.box-area3:hover p {
+    color: #fff;
+}
+
+section#past-events h2 {
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    outline: 100px;
+    outline-style: inherit;
+}
+
+.container {
+    width: 300%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+}
+
+.slideshow {
+    position: absolute;
+    /* Change the position property to absolute */
+    width: 100%;
+    height: 100%;
+    /* Set the height to 100% */
+    left: 0;
+    top: 0;
+
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide:first-child {
+    opacity: 1;
+}
+
+section#about {
+    padding: 20px;
+    text-align: center;
+}
+
+
+section#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+/* footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+} */
+
+footer {
+	/* position: fixed; */
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	background-size: inherit;
+	background-position: center center;
+	height: 100%;
+	padding-top: 1%;
+	padding-bottom: 8%;
+}
+    .content {
+	padding-bottom: 35%;
+	line-height: 1.9;
+}
+    .footer h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	font-family: 'Dancing Script', cursive;
+	margin: 10px 0;
+}
+.footer p {
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+.footer span {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+.social {
+  padding-top: 2%;
+}
+.social span i {
+  color: #1b0c4f;
+  font-size: 25px;
+  line-height: 50px;
+}
+    @media (max-width:1000px){
+        .wrapper{
+            width: 100%;
+        }
+        .footer {
+	height: 30%;
+	padding-top: 19%;
+}
+        .footer p {
+	width: 90%;
+}
+    }
+    @media (max-width:600px){
+        .footer {
+	height: 40%;
+	padding-top: 45%;
+	padding-bottom: 0;
+}
+        .footer p {
+	width: 90%;
+            line-height: 1.4;
+	font-size: 10px;
+}
+        .footer span {
+	width: 35px;
+	height: 35px;
+            margin: 0 5px;
+}
+        .social span i {
+	font-size: 18px;
+	line-height: 36px;
+}
+        
+    }
+
+
+/*resposive*/
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo {
+        float: none;
+        width: 20%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .nav-area {
+        float: none;
+        margin-top: 0;
+    }
+
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .nav-area {
+        text-align: center;
+    }
+
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

@@ -1,7 +1,18 @@
-// example of a simple form validation
-const form = document.querySelector("form");
-form.addEventListener("submit", validateForm);
+var slideIndex = 0;
+showSlides();
 
-function validateForm(event) {
-  event.preventDefault();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = "0";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.opacity = "1";
+  setTimeout(showSlides, 5000); // Change image every 3 seconds
 }
+
+
